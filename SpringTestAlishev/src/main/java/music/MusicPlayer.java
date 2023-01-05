@@ -33,12 +33,4 @@ public class MusicPlayer {
     public void setMusic(Music music) {
         this.music = music;
     }
-
-    public void initMethod(){
-        System.out.println("Hi from init method!");
-    }
-
-    public void destroyMethod(){
-        System.out.println("Bye from destroy method");
-    }
 }

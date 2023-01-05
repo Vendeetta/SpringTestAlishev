@@ -1,5 +1,8 @@
 package music;
 
+import org.springframework.stereotype.Component;
+
+@Component("classMusic")
 public class ClassicalMusic implements Music{
 
     private ClassicalMusic() {
@@ -10,10 +13,4 @@ public class ClassicalMusic implements Music{
         return "Playing Mozart";
     }
 
-    public void init(){
-        System.out.println("init");
-    }
-    public void destr(){
-        System.out.println("destr");
-    }
 }

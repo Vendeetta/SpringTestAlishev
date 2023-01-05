@@ -1,5 +1,8 @@
 package music;
 
+import org.springframework.stereotype.Component;
+
+
 public class RockMusic implements Music{
 
     public RockMusic() {
