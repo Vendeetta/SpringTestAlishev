@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringTestAlishev:war">
+    <output-path>$PROJECT_DIR$/SpringTestAlishev/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpringTestAlishev</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SpringTestAlishev.war">
+      <element id="artifact" artifact-name="SpringTestAlishev:war exploded" />
+    </root>
+  </artifact>
+</component>
