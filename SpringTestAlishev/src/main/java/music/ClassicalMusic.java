@@ -1,11 +1,11 @@
 package music;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-@Component
 public class ClassicalMusic implements Music{
 
-    private ClassicalMusic() {
+    public ClassicalMusic() {
     }
 
     @Override
