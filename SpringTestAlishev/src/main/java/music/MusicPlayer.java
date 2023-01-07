@@ -1,6 +1,7 @@
 package music;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -10,14 +11,10 @@ public class MusicPlayer {
     private Music music;
     @Value("10")
     private int trackCount;
-
     @Autowired
-    public MusicPlayer(ClassicalMusic music) {
+
+    public MusicPlayer(@Qualifier("rockMusic") Music music) {
         this.music = music;
-    }
-
-    public MusicPlayer() {
-
     }
 
     public int getTrackCount() {
@@ -31,6 +28,7 @@ public class MusicPlayer {
     public Music getMusic() {
         return music;
     }
+
 
     public void setMusic(Music music) {
         this.music = music;
